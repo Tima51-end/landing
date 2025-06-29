@@ -1,0 +1,66 @@
+@use '../variables' as *;
+
+.menu {
+    background-color: #E5E6E8;
+    height: 100vh;
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    opacity: 0;
+    transform: translateX(-100%); // меню выезжает слева
+    transition: all 1s; // time
+
+
+    pointer-events: none;
+
+    &:target {
+        opacity: 1; // Показываем меню, когда #menu активно
+        transform: translateX(0); // меню возразается
+        pointer-events: all; // Разрешаем взаимодействие
+      }
+
+
+    &__bottom {
+
+        & {
+            margin-top: 48px;
+        }
+
+        @include paddingIline;
+
+        
+    }
+
+    &_link {
+        text-decoration: none;
+        color: $main-text-color;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 2px;
+    }
+
+    &__link--call-to-order-text {
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 15px;
+            left: 0;
+            width: 100%;
+            background-color: $main-text-color;
+            height: 1px;
+            display: block;
+            
+        }
+    }
+
+}
+
+

@@ -1,0 +1,17 @@
+@use '../variables' as *;
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+
+    @include toHover (transform, scale(1.3));
+
+    @include logoheight;
+  }
+  @include paddingBlock;
+  @include paddingIline;
+}
+  

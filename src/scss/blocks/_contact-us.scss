@@ -1,0 +1,83 @@
+@use '../variables' as *;
+
+.contact-us {
+    margin: 0;
+
+    &__conteiner {
+        @include pageGrid;
+
+    }
+
+    &__form {
+        grid-column: 1 / -1;
+
+        @include onDesktop {
+            grid-column: 1 / 6;
+        }
+
+        padding-bottom: 48px;
+        &-element {
+            width: 100%;
+
+            color: #7E7E83;
+
+            background-color: #F8F8FA;
+
+            border: 1px, solid, #F0F1F4;
+            border-radius: 8px;
+
+
+            font-family: "Space Mono", sans-serif;
+
+            &--text {
+                height: 48px;
+                margin-bottom: 16px;
+            }
+
+            &--email {
+                height: 48px;
+                margin-bottom: 16px;
+            }
+
+            &--message {
+                height: 148px;
+                margin-bottom: 32px;
+            }
+
+            &--button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 56px;
+            }
+
+            &:hover {
+                border-color: #D5D7DE;
+            }
+
+            &:active {
+                border-color: #292929;
+            }
+        }
+    }
+
+    &__info {
+        grid-column: 1 / -1;
+
+        @include onDesktop {
+            grid-column: 7 / 13;
+        }
+
+        &-text {
+            font-family: "Space Mono", sans-serif;
+            color: #191919;
+            &--top {
+                font-family: "Space Grotesk", sans-serif;
+                font-size: 14px;
+                color: #9393A3;
+            }
+        }
+    }
+
+    @include paddingIline;
+}

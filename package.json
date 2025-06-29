@@ -1,0 +1,16 @@
+{
+  "name": "landing-projekt-nothing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass  src/scss/main.scss src/styles/styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.86.0"
+  }
+}

@@ -1,0 +1,12 @@
+@use '../variables' as *;
+
+.recommended {
+    margin: 0;
+    
+    &__products {
+        @include pageGrid;
+        row-gap: 40px;
+
+    }
+
+}

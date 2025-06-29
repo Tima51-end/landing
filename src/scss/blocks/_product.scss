@@ -1,0 +1,57 @@
+@use '../variables' as *;
+
+.product {
+
+    transition: transform 0.3s ease; 
+    
+    @include onDesktop {
+        &:hover {
+            transform: scale(1.05); 
+        }
+    }
+
+    grid-column: 1 / -1;
+
+    @include onTablet {
+        grid-column: 2 / -2;
+    }
+    
+    @include onDesktop {
+        grid-column: span 4;
+    }
+    &__image {
+        width: 100%;
+        
+
+    }
+    &__image {
+        width: 100%;
+        
+
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        padding-block: 24px 8px;
+        margin: 0;
+    }
+
+    &__text {
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        font-family: "Space Mono", sans-serif;
+        margin: 0;
+        padding-bottom: 12px;
+    }
+
+    &__price {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        margin: 0;
+    }
+
+}

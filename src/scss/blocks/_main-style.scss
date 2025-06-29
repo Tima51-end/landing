@@ -1,0 +1,13 @@
+@use '../variables' as *;
+
+.main-style {
+    display: grid;
+ 
+    padding-block: 64px;
+
+    &__background-image {
+        width: 100%;
+        max-height: 460px;
+    }
+
+}
