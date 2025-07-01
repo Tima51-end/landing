@@ -1,8 +1,8 @@
-@use '../variables' as *;
+@use "../variables" as *;
 
 .header {
+  background-image: url("../images/Image.png");
 
-  background-image: url('/images/Image.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,15 +12,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
-
 
 .header__bottom {
   padding-bottom: 40px;
   @include paddingIline;
-  
+
   @include onTablet() {
-    padding-bottom: 65px; 
+    padding-bottom: 65px;
   }
 }
