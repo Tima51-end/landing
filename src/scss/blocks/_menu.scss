@@ -11,16 +11,16 @@
     right: 0;
 
     opacity: 0;
-    transform: translateX(-100%); // меню выезжает слева
-    transition: all 1s; // time
+    transform: translateX(-100%);
+    transition: all 1s; 
 
 
     pointer-events: none;
 
     &:target {
-        opacity: 1; // Показываем меню, когда #menu активно
-        transform: translateX(0); // меню возразается
-        pointer-events: all; // Разрешаем взаимодействие
+        opacity: 1; 
+        transform: translateX(0); 
+        pointer-events: all; 
       }
 
 
