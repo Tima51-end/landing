@@ -111,7 +111,7 @@ input, textarea, button {
 }
 
 .header {
-  background-image: url("/src/images/Image.png");
+  background-image: url("../images/Image.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -176,13 +176,13 @@ input, textarea, button {
   background-image: url("../icons/Phone-number.svg");
 }
 .icons__link--menu {
-  background-image: url("../icons/icon-burger-menu.svg");
+  background-image: url("../icons/Icon-Burger-menu.svg");
 }
 .icons__link--menu:hover {
   background-image: url("../icons/Icon-Burger-menu-hover.svg");
 }
 .icons__link--close {
-  background-image: url("../icons/icon-close.svg");
+  background-image: url("../icons/Icon-Close.svg");
 }
 
 .menu {
@@ -653,5 +653,3 @@ input, textarea, button {
     padding-inline: 120px;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
