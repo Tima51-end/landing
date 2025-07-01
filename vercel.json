@@ -1,10 +1,13 @@
 {
   "rewrites": [
     {
-      "source": "/(.*\\..+)",
+      "source": "/src/(.*\\..+)$",
       "destination": "/src/$1"
     },
-
+    {
+      "source": "/(.*\\..+)$",
+      "destination": "/src/$1"
+    },
     {
       "source": "/",
       "destination": "/src/index.html"
